@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureShare | Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="home.html" class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Secure<span>Share</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="home.html" class="nav-link">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="apks.html" class="nav-link">
+                    <i class="fab fa-android"></i> APKs
+                </a>
+                <a href="files.html" class="nav-link">
+                    <i class="fas fa-file"></i> Files
+                </a>
+                <a href="contact.html" class="nav-link active">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
+            </div>
+            
+            <div class="nav-user" id="userSection">
+                <!-- Dynamic content -->
+            </div>
+            
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="home.html" class="mobile-link">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="apks.html" class="mobile-link">
+            <i class="fab fa-android"></i> APKs
+        </a>
+        <a href="files.html" class="mobile-link">
+            <i class="fas fa-file"></i> Files
+        </a>
+        <a href="contact.html" class="mobile-link active">
+            <i class="fas fa-envelope"></i> Contact
+        </a>
+        <div class="mobile-user" id="mobileUserSection">
+            <!-- Dynamic content -->
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="page-header">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">Get in touch with us for any inquiries</p>
+        </div>
+
+        <!-- Contact Content -->
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>support@secureshare.com</p>
+                        <p class="contact-hint">We respond within 24 hours</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Phone Support</h3>
+                        <p>+1 (555) 123-4567</p>
+                        <p class="contact-hint">Mon-Fri, 9AM-6PM EST</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>WhatsApp Support</h3>
+                        <p>Join our support group for quick assistance</p>
+                        <a href="https://chat.whatsapp.com/CxsbmV7zMpVCikL8o3h34K" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Join WhatsApp Group
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Password Assistance</h3>
+                        <p>Need help with passwords or registration?</p>
+                        <p class="contact-hint">Join our WhatsApp group for password support</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send us a Message</h2>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label class="form-label" for="contactName">Full Name</label>
+                        <input type="text" class="form-input" id="contactName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="contactEmail">Email Address</label>
+                        <input type="email" class="form-input" id="contactEmail" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="contactSubject">Subject</label>
+                        <select class="form-input" id="contactSubject" required>
+                            <option value="">Select a subject</option>
+                            <option value="support">Technical Support</option>
+                            <option value="password">Password Assistance</option>
+                            <option value="upload">File Upload Issue</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="contactMessage">Message</label>
+                        <textarea class="form-input" id="contactMessage" rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure<span>Share</span></span>
+                    </div>
+                    <p class="footer-text">Secure file sharing platform</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="home.html">Home</a>
+                    <a href="apks.html">APKs</a>
+                    <a href="files.html">Files</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="https://chat.whatsapp.com/CxsbmV7zMpVCikL8o3h34K" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2023 SecureShare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/auth.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/utils.js"></script>
+    <script>
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check authentication
+            checkAuth();
+            
+            // Initialize navigation
+            initNavigation();
+            
+            // Set active nav link
+            setActiveNavLink('contact');
+            
+            // Contact form submission
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('contactName').value;
+                const email = document.getElementById('contactEmail').value;
+                const subject = document.getElementById('contactSubject').value;
+                const message = document.getElementById('contactMessage').value;
+                
+                showNotification(`Thank you, ${name}! Your message has been sent. We'll respond to ${email} soon.`, 'success');
+                
+                // Reset form
+                document.getElementById('contactForm').reset();
+            });
+        });
+    </script>
+</body>
+</html>

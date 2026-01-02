@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureShare | Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-header">
+            <a href="home.html" class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <h1>Secure<span>Share</span></h1>
+            </a>
+            <p class="auth-subtitle">Create your account to access files</p>
+        </div>
+
+        <div class="auth-card">
+            <h2>Create Account</h2>
+            
+            <form id="register-form">
+                <div class="form-group">
+                    <label class="form-label" for="username">Username</label>
+                    <input type="text" class="form-input" id="username" required>
+                    <div class="form-hint">Choose a unique username</div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="password">Password</label>
+                    <input type="password" class="form-input" id="password" required>
+                    <div class="form-hint">At least 6 characters</div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="passcode">Registration Passcode</label>
+                    <input type="text" class="form-input" id="passcode" placeholder="Enter your passcode" required>
+                    <div class="form-hint">Required for registration</div>
+                </div>
+                
+                <div class="password-note">
+                    <p><i class="fas fa-info-circle"></i> You need a valid passcode to register. Join our <a href="https://chat.whatsapp.com/CxsbmV7zMpVCikL8o3h34K" target="_blank">WhatsApp group</a> for assistance.</p>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-user-plus"></i> Create Account
+                </button>
+                
+                <div class="auth-switch">
+                    <p>Already have an account? <a href="login.html">Sign in</a></p>
+                </div>
+            </form>
+        </div>
+        
+        <div class="auth-footer">
+            <p>&copy; 2023 SecureShare. By registering, you agree to our Terms of Service.</p>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script>
+        document.getElementById('register-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const passcode = document.getElementById('passcode').value;
+            
+            const success = registerUser(username, password, passcode);
+            if (success) {
+                window.location.href = 'home.html';
+            }
+        });
+    </script>
+</body>
+</html>

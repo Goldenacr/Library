@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureShare | Redirecting...</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/navigation.js"></script>
+</head>
+<body>
+    <div class="redirect-container">
+        <div class="redirect-content">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <h1>Secure<span>Share</span></h1>
+            </div>
+            <div class="spinner"></div>
+            <p>Redirecting you to the appropriate page...</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if user is logged in
+            const user = localStorage.getItem('secureShareUser');
+            
+            // Small delay for better UX
+            setTimeout(() => {
+                if (user) {
+                    window.location.href = 'home.html';
+                } else {
+                    window.location.href = 'register.html';
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
